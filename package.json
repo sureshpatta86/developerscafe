@@ -1,0 +1,22 @@
+{
+  "name": "developers-cafe",
+  "version": "1.0.0",
+  "description": "Developers Cafe Application",
+  "main": "backend/server.js",
+  "scripts": {
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dcapp": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "author": "Suresh Patta",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.5.1",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.3",
+    "nodemon": "^2.0.15"
+  }
+}
